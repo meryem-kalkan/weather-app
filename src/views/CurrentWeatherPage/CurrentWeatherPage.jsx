@@ -2,7 +2,6 @@
 export const CurrentWeatherPage = () => {
     return (
         <>
-       
         </>
     )
 }

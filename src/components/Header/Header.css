@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-container {
+    background-color: rgb(197, 227, 245);
+    padding: 2rem 4.5rem;
+    max-width: 90%;
+    margin: 4rem auto;
+    border-radius: 15px;
+}
+
+input {
+    width: 30rem;
+    border-radius: 7px;
+    border: none;
+    height: 2rem;
+}
+
+h2 {
+    font-weight: 400;
+}
