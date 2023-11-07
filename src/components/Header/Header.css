@@ -8,9 +8,10 @@
 .header-container {
     background-color: rgb(197, 227, 245);
     padding: 2rem 4.5rem;
-    max-width: 90%;
-    margin: 4rem auto;
+    max-width: 80%;
+    margin: 2rem auto;
     border-radius: 15px;
+    height: 45rem;
 }
 
 input {
