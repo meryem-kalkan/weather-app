@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+input {
+    width: 30rem;
+    border-radius: 7px;
+    border: none;
+    height: 2rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+#units {
+    cursor: pointer;
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    width: 30rem;
+    position: absolute;
+    margin: 0.3rem 0;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+li {
+    padding: 1rem;
+}
+
+li:hover {
+    background-color: rgb(241, 244, 246);
+}
+
+.error-loading-box {
+    text-align: center;
+}
+.error-loading-box p:nth-child(2) {
+    cursor: pointer;
+}
