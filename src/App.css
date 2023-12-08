@@ -13,10 +13,11 @@ html {
   .app-container {
     background-color: rgb(197, 227, 245);
     padding: 2rem 4.5rem;
-    max-width: 80%;
+    max-width: 75rem;
     margin: 2rem auto;
     border-radius: 15px;
     height: 45rem;
+    width: 95%;
   }
   
   .main {
@@ -58,6 +59,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   
   .image-text-container img {
@@ -68,7 +70,7 @@ html {
   .image-text-container p {
     font-size: 22px;
     position: relative;
-    bottom: 2rem
+    bottom: 2rem;
   }
   
   .weather-info-container {
@@ -84,6 +86,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 9rem;
   }
   
   .parameters-container img {
@@ -143,4 +146,92 @@ html {
     align-items: center;
     justify-content: space-between;
     height: 22rem;
+  }
+
+ 
+  @media only screen and (max-width: 1200px) {
+    .parameters-container {
+      width: 12rem;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .parameters-container {
+      width: 9rem;
+    }
+    input {
+      width: 22rem;
+    }
+    ul {
+      width: 22rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .app-container {
+ padding: 1rem 2.2rem;
+    }
+    .parameters-container {
+      padding: 0.5rem;
+      margin: 0 0.4rem;
+    }
+    input {
+      width: 15rem;
+    }
+    ul {
+      width: 15rem;
+    }
+    .weather-info-container  {
+      overflow: scroll;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    input {
+      width: 9rem;
+    }
+    ul {
+      width: 9rem;
+    }
+   .banner img {
+     width: auto;
+     height: auto;
+    }
+    .banner p {
+      font-size: 22px;
+    }
+    .banner h1 {
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .image-text-container img{
+      display: none;
+    }
+    .image-text-container p {
+      bottom: 4rem;
+    }
+    .banner {
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+    }
+    input {
+      width: 14.5rem;
+    }
+    ul {
+      width: 14.5rem;
+    }
+    .app-container {
+      height: 55rem;
+    }
+    .main {
+      height: 40rem;
+    }
+    .header {
+      flex-direction: column;
+      height: 10rem;
+      align-items: start;
+    }
   }
