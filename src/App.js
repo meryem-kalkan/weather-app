@@ -21,24 +21,11 @@ const { lat, lon } = location;
 const dispatch = useDispatch();
 
 useEffect(() => {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-       const lat = position.coords.latitude;
-       const lon = position.coords.longitude;
-       
-        dispatch(fetchWeatherData({lat, lon, units}));
-        dispatch(fetchForecastData({lat, lon, units}));
-      })
-      }
-}, []);
-
-useEffect(() => {
-  if (location.lat && location.lon) {
+  if (lat && lon) {
   dispatch(fetchWeatherData({lat, lon, units}));
   dispatch(fetchForecastData({lat, lon, units}));
   }
-}, [dispatch, location, units]);
+}, [dispatch, units, lat, lon]);
 
 const cleanErrors = () => {
 dispatch(clearErrors())
