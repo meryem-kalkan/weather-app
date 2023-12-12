@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchGeoCode = createAsyncThunk('geoCode/fetchGeoCode', async(searchValue) => {
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=5&appid=${process.env.REACT_APP_KEY}`);
+    const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=5&appid=${process.env.REACT_APP_KEY}`);
     const jsonResponse = await response.json();
     return jsonResponse;
 })
