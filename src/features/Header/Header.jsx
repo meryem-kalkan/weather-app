@@ -85,7 +85,7 @@ export const Header = () => {
         {renderLocationList()}
         </div>
         <p>{weekday}  {time}</p>
-        <p id="units" onClick={changeUnit}>{units === 'metric' ? '°C': '°F'}</p>
+        <p id="units" data-testid="metric" onClick={changeUnit}>{units === 'metric' ? '°C': '°F'}</p>
         </div>
     )
 }
