@@ -1,15 +1,17 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
+describe(App, () => {
+  it("should show text when there is no chosen location", () => {
+      
+  render(<Provider store={store}>
       <App />
-    </Provider>
-  );
-
-  expect(getByText(/learn/i)).toBeInTheDocument();
-});
+    </Provider>)
+    
+   const text = screen.getByText('Explore current weather data and 5-day forecast of more than 200,000 cities!');
+   expect(text).toBeInTheDocument();
+  })
+})

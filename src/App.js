@@ -18,7 +18,7 @@ const units = useSelector(selectUnits);
 const loading = useSelector(selectLoading);
 const error = useSelector(selectErrors);
 const { lat, lon } = location;
-const dispatch = useDispatch();
+const dispatch = useDispatch(); 
 
 useEffect(() => {
   if (lat && lon) {
